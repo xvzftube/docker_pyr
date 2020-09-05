@@ -1,3 +1,7 @@
+Docker file for a python and R setup
+
+```
+
 # https://hub.docker.com/u/rocker
 FROM rocker/tidyverse:3.6.2
 
@@ -25,3 +29,4 @@ COPY r/script.R /usr/bin/script.R
 
 # Run main.py when the container launches
 CMD ["python3", "main.py"]
+```
